@@ -586,7 +586,7 @@ function initForm() {
             `*Nombre:* ${name}\n*Teléfono:* ${phone}\n` +
             `*Proyecto:* ${project || 'No especificado'}\n*Descripción:* ${msg}`
         );
-        window.open(`https://wa.me/528139171656?text=${text}`, '_blank');
+        window.open(`https://wa.me/528114994525?text=${text}`, '_blank');
     });
 }
 
