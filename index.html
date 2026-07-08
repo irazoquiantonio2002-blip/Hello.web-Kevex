@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Kavex | Remolques Móviles y Food Trucks Equipados en México</title>
+    <meta name="description" content="Fabricamos remolques móviles, food trucks y oficinas móviles 100% mexicanos. Estructura de acero reforzado, equipamiento premium y envíos a toda la República. ¡Cotiza tu remolque hoy!">
+    <meta name="keywords" content="remolques móviles México, food truck a medida, remolque para negocio de comida, tráiler equipado, oficina móvil, fabricante de remolques, remolque de acero, Grupo Kavex">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Grupo Kavex — Remolques que Hacen Crecer tu Negocio">
+    <meta property="og:description" content="Remolques móviles y food trucks 100% equipados, fabricados en acero reforzado. Envíos a toda la República Mexicana. Tú pones la idea, nosotros el equipo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="imagenes/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold':        '#2461E8',
+                        'gold-light':  '#4F8AFF',
+                        'gold-dark':   '#10339E',
+                        'brand-dark':  '#080808',
+                        'brand-dark2': '#111111',
+                        'brand-dark3': '#1a1a1a',
+                        'brand-dark4': '#222222',
+                    },
+                    fontFamily: {
+                        'sans':  ['Montserrat', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-dark font-sans overflow-x-hidden">
+
+    <!-- ============================================================
+         LOADER — Premium site reveal
+    ============================================================ -->
+    <div id="site-loader" aria-hidden="true">
+        <div class="loader-inner">
+            <div class="loader-ring-wrap">
+                <svg class="loader-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="loader-track" cx="50" cy="50" r="42"/>
+                    <circle class="loader-arc"   cx="50" cy="50" r="42"/>
+                </svg>
+                <div class="loader-home-icon">
+                    <img src="imagenes/logo.png" alt="Logo Grupo Kavex" class="loader-logo-img">
+                </div>
+            </div>
+            <div class="loader-brand">
+                <span class="loader-brand-main">KAVEX</span>
+                <span class="loader-brand-sub">Remolques que Hacen Crecer tu Negocio</span>
+            </div>
+            <div class="loader-bar-outer">
+                <div class="loader-bar-inner" id="loaderFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="flex items-center gap-3">
+                    <div class="nav-logo-icon">
+                        <img src="imagenes/logo.png" alt="Logo Grupo Kavex — Remolques Industriales" class="nav-logo-img">
+                    </div>
+                    <div class="leading-tight">
+                        <div class="text-white font-black text-base tracking-wider uppercase">KAVEX</div>
+                        <div class="text-gold text-xs font-semibold tracking-widest uppercase">Grupo Kavex · Remolques</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="#remolques"  class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Remolques</a>
+                    <a href="#proyectos"  class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Proyectos</a>
+                    <a href="#galeria"    class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Galería</a>
+                    <a href="#oficinas"   class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Oficinas</a>
+                    <a href="#beneficios" class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Beneficios</a>
+                    <a href="#proceso"    class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Proceso</a>
+                    <a href="#contacto"   class="nav-link text-gray-200 hover:text-gold text-sm font-medium tracking-wide">Contacto</a>
+                </div>
+                <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20cotizar%20un%20remolque%20Kavex"
+                   target="_blank"
+                   class="hidden lg:flex btn-gold-primary items-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp text-lg"></i> Cotizar Ahora
+                </a>
+                <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Menú">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark2/95 backdrop-blur-md border-t border-gold/20">
+            <div class="px-6 py-5 flex flex-col gap-4">
+                <a href="#remolques"  class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Remolques</a>
+                <a href="#proyectos"  class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Proyectos</a>
+                <a href="#galeria"    class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Galería</a>
+                <a href="#oficinas"   class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Oficinas Móviles</a>
+                <a href="#beneficios" class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Beneficios</a>
+                <a href="#proceso"    class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Proceso</a>
+                <a href="#contacto"   class="mobile-nav-link text-gray-200 text-sm font-medium py-1">Contacto</a>
+                <a href="https://wa.me/528139171656" target="_blank"
+                   class="btn-gold-primary flex items-center justify-center gap-2 py-3 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp text-lg"></i> Cotizar Ahora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO SECTION
+         Fondo: foto real de la planta de fabricación Kavex
+    ============================================================ -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+
+        <div class="hero-water-wrap absolute inset-0" aria-hidden="true">
+            <img id="heroWaterImg"
+                 src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.39%20PM.jpeg"
+                 alt="Planta de fabricación Grupo Kavex — línea de producción de remolques de acero"
+                 class="hero-water-img"
+                 loading="eager">
+        </div>
+
+        <!-- Overlays para legibilidad -->
+        <div class="hero-overlay-base   absolute inset-0"></div>
+        <div class="hero-overlay-left   absolute inset-0"></div>
+        <div class="hero-overlay-gold   absolute inset-0"></div>
+        <div class="hero-grid           absolute inset-0"></div>
+
+        <!-- Orbes de acento -->
+        <div class="gold-orb gold-orb-1 absolute pointer-events-none"></div>
+        <div class="gold-orb gold-orb-2 absolute pointer-events-none"></div>
+
+        <!-- Líneas decorativas -->
+        <div class="water-line water-line-1 absolute pointer-events-none"></div>
+        <div class="water-line water-line-2 absolute pointer-events-none"></div>
+
+        <!-- Partículas -->
+        <div id="particles" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+        <!-- Línea de escaneo premium -->
+        <div class="hero-scan-line" aria-hidden="true"></div>
+
+        <!-- Pulso ambiental -->
+        <div class="hero-ambient-pulse" aria-hidden="true"></div>
+
+        <!-- Cursor spotlight -->
+        <div id="heroSpotlight" class="hero-spotlight" aria-hidden="true"></div>
+
+        <!-- Sweep de luz sobre el fondo -->
+        <div class="hero-sweep" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-screen py-28">
+
+                <!-- Contenido texto -->
+                <div class="lg:col-span-9 hero-content z-10" id="heroContent">
+
+                    <div class="hero-badge inline-flex items-center gap-2 mb-7 opacity-0">
+                        <span class="badge-pulse"></span>
+                        <span class="text-gold text-xs font-bold tracking-widest uppercase">Fabricación 100% Mexicana · Envíos a Toda la República</span>
+                    </div>
+
+                    <h1 class="hero-title mb-6 leading-none">
+                        <span class="block text-white font-black text-5xl md:text-6xl xl:text-[70px] tracking-tight drop-shadow-2xl">TU NEGOCIO</span>
+                        <span class="block text-gradient-gold font-black text-5xl md:text-6xl xl:text-[70px] tracking-tight">SOBRE RUEDAS</span>
+                        <span class="block text-white/75 font-light text-xl md:text-2xl xl:text-3xl tracking-[0.22em] mt-3 uppercase">remolques y food trucks 100% equipados</span>
+                    </h1>
+
+                    <div class="hero-deco-line opacity-0 mb-8">
+                        <div class="h-px bg-gradient-to-r from-gold/80 via-gold-light/50 to-transparent w-72 max-w-full"></div>
+                    </div>
+
+                    <p class="hero-subtitle opacity-0 text-gray-200 text-base md:text-lg leading-relaxed mb-10 max-w-lg
+                               [text-shadow:0_2px_12px_rgba(0,0,0,0.9)]">
+                        Fabricamos
+                        <span class="text-gold font-semibold">remolques móviles, food trucks y oficinas móviles</span>
+                        con estructura de acero reforzado y equipamiento premium. Tú pones la idea, nosotros el equipo.
+                    </p>
+
+                    <div class="hero-ctas opacity-0 flex flex-col sm:flex-row gap-4 mb-14">
+                        <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20cotizar%20un%20remolque%20Kavex" target="_blank"
+                           class="btn-gold-primary flex items-center justify-center gap-3 px-9 py-4 text-sm font-black uppercase tracking-wide shadow-2xl">
+                            <i class="fab fa-whatsapp text-xl"></i> Solicitar Cotización Hoy
+                        </a>
+                        <a href="#remolques"
+                           class="btn-glass flex items-center justify-center gap-3 px-9 py-4 text-sm font-bold uppercase tracking-wide">
+                            <i class="fas fa-images text-sm"></i> Ver Modelos y Precios
+                        </a>
+                    </div>
+
+                    <div class="hero-stats opacity-0 inline-grid grid-cols-3 gap-0 border border-gold/15 backdrop-blur-sm bg-black/25">
+                        <div class="text-center px-5 py-4 border-r border-gold/15">
+                            <div class="counter text-gold font-black text-3xl md:text-4xl [text-shadow:0_0_20px_rgba(36,97,232,0.4)]" data-target="32" data-suffix="">0</div>
+                            <div class="text-gray-300 text-xs font-semibold uppercase tracking-wider mt-1">Estados con Envío</div>
+                        </div>
+                        <div class="text-center px-5 py-4 border-r border-gold/15">
+                            <div class="counter text-gold font-black text-3xl md:text-4xl [text-shadow:0_0_20px_rgba(36,97,232,0.4)]" data-target="100" data-suffix="%">0%</div>
+                            <div class="text-gray-300 text-xs font-semibold uppercase tracking-wider mt-1">Fabricación Nacional</div>
+                        </div>
+                        <div class="text-center px-5 py-4">
+                            <div class="counter text-gold font-black text-3xl md:text-4xl [text-shadow:0_0_20px_rgba(36,97,232,0.4)]" data-target="53" data-suffix=" ft">0 ft</div>
+                            <div class="text-gray-300 text-xs font-semibold uppercase tracking-wider mt-1">Personalización Máx.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-brand-dark to-transparent pointer-events-none"></div>
+
+        <div class="scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+            <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+            <span class="text-gray-400 text-xs tracking-widest uppercase [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">Explorar</span>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         REMOLQUES / CATÁLOGO
+         5 tarjetas con imágenes reales + 5 con gradiente de marca
+    ============================================================ -->
+    <section id="remolques" class="py-24 bg-brand-dark2 relative overflow-hidden">
+        <div class="section-glow-bg absolute inset-0 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="section-header text-center mb-16">
+                <span class="section-tag">Nuestro Catálogo</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5 leading-tight">
+                    Remolques y Food Trucks<br>
+                    <span class="text-gradient-gold">Equipados para Cualquier Giro</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Del carrito compacto al remolque industrial de doble eje. Elige tu modelo o personalízalo a tu medida.
+                </p>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <div class="products-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+                <!-- HAMBURGUESAS — Foto real -->
+                <div class="product-card product-card-img">
+                    <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.38%20PM.jpeg"
+                         alt="Remolque equipado para venta de hamburguesas, acabado negro premium Kavex" class="product-bg-img" loading="lazy">
+                    <div class="product-img-overlay"></div>
+                    <div class="product-icon-bg relative z-10"><i class="fas fa-hamburger"></i></div>
+                    <h3 class="product-name relative z-10">Hamburguesas</h3>
+                    <p class="product-sub relative z-10">Parrilla y plancha</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- TACOS — Foto real -->
+                <div class="product-card product-card-img">
+                    <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.37%20PM%20(1).jpeg"
+                         alt="Remolque equipado para venta de tacos y antojitos mexicanos" class="product-bg-img" loading="lazy">
+                    <div class="product-img-overlay"></div>
+                    <div class="product-icon-bg relative z-10"><i class="fas fa-pepper-hot"></i></div>
+                    <h3 class="product-name relative z-10">Tacos y Antojitos</h3>
+                    <p class="product-sub relative z-10">Barra y tarja</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- HOT DOGS — Foto real -->
+                <div class="product-card product-card-img">
+                    <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.36%20PM.jpeg"
+                         alt="Remolque compacto color plata para hot dogs y comida rápida" class="product-bg-img" loading="lazy">
+                    <div class="product-img-overlay"></div>
+                    <div class="product-icon-bg relative z-10"><i class="fas fa-hotdog"></i></div>
+                    <h3 class="product-name relative z-10">Hot Dogs</h3>
+                    <p class="product-sub relative z-10">Compacto y ágil</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- SNACKS — Gradiente -->
+                <div class="product-card" style="--c1:#101a2e;--c2:#080d18;">
+                    <div class="product-icon-bg"><i class="fas fa-cookie-bite"></i></div>
+                    <h3 class="product-name">Snacks y Botanas</h3>
+                    <p class="product-sub">Vitrinas y exhibición</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- BEBIDAS — Foto real -->
+                <div class="product-card product-card-img">
+                    <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM.jpeg"
+                         alt="Remolque azul con ventana de servicio y barra para bebidas" class="product-bg-img" loading="lazy">
+                    <div class="product-img-overlay"></div>
+                    <div class="product-icon-bg relative z-10"><i class="fas fa-mug-hot"></i></div>
+                    <h3 class="product-name relative z-10">Bebidas Frías</h3>
+                    <p class="product-sub relative z-10">Refrigeración lista</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- NEGOCIO MÓVIL — Gradiente -->
+                <div class="product-card" style="--c1:#0c1c3a;--c2:#060d1c;">
+                    <div class="product-icon-bg"><i class="fas fa-caravan"></i></div>
+                    <h3 class="product-name">Negocio Móvil</h3>
+                    <p class="product-sub">Remolque compacto</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- REMOLQUE RECTO — Foto real -->
+                <div class="product-card product-card-img">
+                    <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM%20(2).jpeg"
+                         alt="Sala de exhibición Kavex con remolques rectos de distintos colores" class="product-bg-img" loading="lazy">
+                    <div class="product-img-overlay"></div>
+                    <div class="product-icon-bg relative z-10"><i class="fas fa-truck-moving"></i></div>
+                    <h3 class="product-name relative z-10">Remolque Recto</h3>
+                    <p class="product-sub relative z-10">Doble eje, máxima capacidad</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- OFICINA MÓVIL — Gradiente -->
+                <div class="product-card" style="--c1:#13223f;--c2:#0a1526;">
+                    <div class="product-icon-bg"><i class="fas fa-building"></i></div>
+                    <h3 class="product-name">Oficina Móvil</h3>
+                    <p class="product-sub">12 a 53 pies</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- ACERO REFORZADO — Gradiente -->
+                <div class="product-card" style="--c1:#16233c;--c2:#0b1220;">
+                    <div class="product-icon-bg"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="product-name">Acero Reforzado</h3>
+                    <p class="product-sub">Chasis de alta resistencia</p>
+                    <div class="product-glow"></div>
+                </div>
+
+                <!-- ENVÍOS NACIONALES — Gradiente -->
+                <div class="product-card" style="--c1:#101828;--c2:#080c14;">
+                    <div class="product-icon-bg"><i class="fas fa-truck-fast"></i></div>
+                    <h3 class="product-name">Envíos Nacionales</h3>
+                    <p class="product-sub">Toda la República</p>
+                    <div class="product-glow"></div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-14">
+                <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20conocer%20modelos%20y%20precios%20de%20remolques%20Kavex" target="_blank"
+                   class="btn-gold-primary inline-flex items-center gap-3 px-10 py-4 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp text-xl"></i> Consultar Precios y Disponibilidad
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PROYECTOS REALES — Casos reales entregados
+    ============================================================ -->
+    <section id="proyectos" class="py-24 bg-brand-dark relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="section-header text-center mb-16">
+                <span class="section-tag">Trabajos Realizados</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5">
+                    Remolques que
+                    <span class="text-gradient-gold"> Ya Están Vendiendo</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    De la idea al negocio en marcha. Así entregamos cada unidad: lista, equipada y a la medida del cliente.
+                </p>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <div class="portfolio-grid grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                <!-- Proyecto 1: Mariscos El Padrino -->
+                <div class="portfolio-card portfolio-card-featured">
+                    <div class="portfolio-img-wrap">
+                        <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.33%20PM%20(1).jpeg"
+                             alt="Remolque personalizado y rotulado para Mariscos El Padrino"
+                             class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay"></div>
+                        <div class="portfolio-tag portfolio-tag-gold">⭐ Destacado</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="text-white font-bold text-base mb-1">Mariscos El Padrino</h3>
+                        <p class="text-gray-400 text-sm">Remolque equipado y rotulado a la medida, listo para vender mariscos frescos.</p>
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/528139171656?text=Hola%2C%20vi%20el%20remolque%20de%20Mariscos%20El%20Padrino%20y%20quiero%20algo%20similar"
+                               target="_blank" class="portfolio-wa-btn">
+                                <i class="fab fa-whatsapp text-sm mr-2"></i>Quiero algo similar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Fabricación en proceso -->
+                <div class="portfolio-card">
+                    <div class="portfolio-img-wrap">
+                        <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.34%20PM%20(1).jpeg"
+                             alt="Remolque en proceso de fabricación con toldo instalado, taller Kavex"
+                             class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay"></div>
+                        <div class="portfolio-tag">Taller · Fabricación</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="text-white font-bold text-base mb-1">Estructura y Toldo en Proceso</h3>
+                        <p class="text-gray-400 text-sm">Cada remolque se arma desde cero: estructura reforzada, toldo y ventana de servicio.</p>
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/528139171656?text=Hola%2C%20vi%20el%20proceso%20de%20fabricacion%20y%20quiero%20cotizar%20mi%20remolque"
+                               target="_blank" class="portfolio-wa-btn">
+                                <i class="fab fa-whatsapp text-sm mr-2"></i>Quiero algo similar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Unidad entregada -->
+                <div class="portfolio-card">
+                    <div class="portfolio-img-wrap">
+                        <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.37%20PM.jpeg"
+                             alt="Remolque negro entregado, listo para operar frente al negocio del cliente"
+                             class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay"></div>
+                        <div class="portfolio-tag">Entrega · Unidad Lista</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="text-white font-bold text-base mb-1">Unidad Entregada y Lista</h3>
+                        <p class="text-gray-400 text-sm">Acabado brillante, estructura sólida y equipamiento completo desde el día uno.</p>
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/528139171656?text=Hola%2C%20vi%20el%20remolque%20entregado%20y%20quiero%20cotizar%20el%20mio"
+                               target="_blank" class="portfolio-wa-btn">
+                                <i class="fab fa-whatsapp text-sm mr-2"></i>Quiero algo similar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-500 text-sm mb-4">¿Tienes en mente algo diferente? Podemos hacerlo realidad.</p>
+                <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20ver%20mas%20proyectos%20y%20cotizar%20el%20mio"
+                   target="_blank"
+                   class="btn-outline-gold inline-flex items-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp"></i> Cotizar Mi Remolque
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+         GALERÍA CARRUSEL — Del taller a la entrega
+    ============================================================ -->
+    <section id="galeria" class="py-24 bg-brand-dark3 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="section-header text-center mb-14">
+                <span class="section-tag">Galería Completa</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5">
+                    Nuestros
+                    <span class="text-gradient-gold"> Remolques en Acción</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Del taller a la entrega. Una muestra real de cómo fabricamos y equipamos cada unidad Kavex.
+                </p>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <!-- CARRUSEL -->
+            <div class="carousel-wrap" id="carousel">
+
+                <div class="carousel-track-wrap">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.33%20PM%20(1).jpeg" alt="Remolque personalizado Mariscos El Padrino" loading="lazy">
+                            <div class="carousel-caption"><span>Personalización de Marca · Mariscos El Padrino</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.34%20PM.jpeg" alt="Remolque en fabricación, vista trasera" loading="lazy">
+                            <div class="carousel-caption"><span>Fabricación · Estructura en Proceso</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.34%20PM%20(1).jpeg" alt="Remolque con toldo instalado en taller" loading="lazy">
+                            <div class="carousel-caption"><span>Taller Kavex · Ensamble de Toldo</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM.jpeg" alt="Remolque azul con ventana de servicio abierta" loading="lazy">
+                            <div class="carousel-caption"><span>Remolque Equipado · Ventana de Servicio</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM%20(1).jpeg" alt="Remolque en acabado final, taller Kavex" loading="lazy">
+                            <div class="carousel-caption"><span>Manufactura · Acabado en Proceso</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM%20(2).jpeg" alt="Sala de exhibición Kavex con varios remolques" loading="lazy">
+                            <div class="carousel-caption"><span>Sala de Exhibición Kavex</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM%20(3).jpeg" alt="Remolque compacto color grafito con ventana amplia" loading="lazy">
+                            <div class="carousel-caption"><span>Remolque Compacto · Ventana Amplia</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.36%20PM.jpeg" alt="Remolque plata entregado y listo para operar" loading="lazy">
+                            <div class="carousel-caption"><span>Unidad Entregada · Lista para Operar</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.37%20PM.jpeg" alt="Remolque negro cerrado con acabado premium" loading="lazy">
+                            <div class="carousel-caption"><span>Remolque Cerrado · Acabado Premium</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.37%20PM%20(1).jpeg" alt="Remolque recto negro, vista frontal en estudio" loading="lazy">
+                            <div class="carousel-caption"><span>Remolque Recto · Vista Frontal</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.38%20PM.jpeg" alt="Remolque recto negro, vista trasera en estudio" loading="lazy">
+                            <div class="carousel-caption"><span>Remolque Recto · Vista Trasera</span></div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.39%20PM.jpeg" alt="Línea de producción Grupo Kavex" loading="lazy">
+                            <div class="carousel-caption"><span>Línea de Producción Grupo Kavex</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-counter">
+                    <span id="carouselCurrent">1</span>
+                    <span class="carousel-counter-sep">/</span>
+                    <span id="carouselTotal">12</span>
+                </div>
+
+                <div class="carousel-progress">
+                    <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+                </div>
+
+                <div class="carousel-dots" id="carouselDots"></div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-500 text-sm mb-5">¿Te gustó algún modelo? Podemos replicarlo o personalizarlo para ti.</p>
+                <a href="https://wa.me/528139171656?text=Hola%2C%20vi%20la%20galeria%20y%20quiero%20cotizar%20un%20remolque%20similar"
+                   target="_blank"
+                   class="btn-gold-primary inline-flex items-center gap-3 px-10 py-4 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp text-xl"></i> Cotizar un Remolque Similar
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+         OFICINAS MÓVILES — Segunda línea de negocio Kavex
+    ============================================================ -->
+    <section id="oficinas" class="inspo-section relative overflow-hidden">
+        <div class="inspo-bg-wrap absolute inset-0">
+            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.35%20PM%20(2).jpeg"
+                 alt="Sala de exhibición Kavex, instalaciones para oficinas móviles"
+                 class="inspo-bg-img" loading="lazy">
+        </div>
+        <div class="inspo-overlay absolute inset-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32">
+            <div class="max-w-2xl">
+                <span class="text-gold/70 text-xs font-bold tracking-widest uppercase">Oficinas Móviles Kavex</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-4 mb-6 leading-tight">
+                    Lleva tu oficina
+                    <span class="text-gradient-gold block">a donde esté tu proyecto</span>
+                </h2>
+                <p class="text-gray-200 text-lg leading-relaxed mb-8">
+                    Fabricamos oficinas móviles desde 12 hasta 53 pies, con aislamiento térmico y acústico, instalación
+                    eléctrica completa, baño integrado y aire acondicionado. Ideales para obra, minería, campamentos
+                    y centros de operación.
+                </p>
+                <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20cotizar%20una%20oficina%20movil%20Kavex" target="_blank"
+                   class="btn-gold-primary inline-flex items-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wide">
+                    <i class="fab fa-whatsapp text-xl"></i> Cotizar Oficina Móvil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         BENEFICIOS
+    ============================================================ -->
+    <section id="beneficios" class="py-24 bg-brand-dark2 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="section-header text-center mb-16">
+                <span class="section-tag">Por Qué Elegirnos</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5">
+                    Beneficios que
+                    <span class="text-gradient-gold"> Hacen la Diferencia</span>
+                </h2>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <div class="benefits-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Estructura de Acero Reforzado</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Chasis y estructura tubular fabricados para resistir el uso diario de tu negocio.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-toolbox text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Equipamiento Premium Incluido</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Plancha, tarja, barra de trabajo, tanques de agua y conexión eléctrica: listo para operar.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-paint-roller text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Diseño Profesional</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Laminado de alta calidad y acabados en acero inoxidable para una imagen que vende.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-flag text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Fabricación 100% Mexicana</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Hecho en México, para emprendedores mexicanos, con estándares de calidad garantizados.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-truck-fast text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Envíos a Toda la República</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sin importar en qué estado estés, llevamos tu remolque hasta la puerta de tu negocio.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-medal text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Garantía de Calidad y Durabilidad</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Respaldamos cada unidad con garantía en estructura y fabricación.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-tags text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Mejoramos Cualquier Cotización*</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Consíguenos una cotización de la competencia y la mejoramos. *Aplican condiciones.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-headset text-gold text-2xl"></i></div>
+                    <h3 class="text-white font-bold text-lg mt-5 mb-3">Atención Inmediata por WhatsApp</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cotización, dudas y seguimiento de tu pedido con respuesta directa y rápida.</p>
+                    <div class="benefit-bar"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESO — Así fabricamos nuestros remolques
+    ============================================================ -->
+    <section id="proceso" class="py-24 bg-brand-dark3 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="section-header text-center mb-16">
+                <span class="section-tag">Así Fabricamos</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5">
+                    De la Idea al
+                    <span class="text-gradient-gold"> Remolque Terminado</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Cinco etapas de control de calidad, desde el chasis hasta la entrega de tu unidad lista para trabajar.
+                </p>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <div class="process-steps relative">
+                <div class="process-connector hidden lg:block"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                    <div class="process-step text-center">
+                        <div class="step-num">01</div>
+                        <div class="step-icon"><i class="fas fa-toolbox text-gold text-xl"></i></div>
+                        <h3 class="text-white font-bold text-base mt-4 mb-2">Chasis</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Fabricamos un chasis reforzado con acero de alta resistencia.</p>
+                    </div>
+
+                    <div class="process-step text-center">
+                        <div class="step-num">02</div>
+                        <div class="step-icon"><i class="fas fa-draw-polygon text-gold text-xl"></i></div>
+                        <h3 class="text-white font-bold text-base mt-4 mb-2">Estructura</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Le damos forma con estructura metálica tubular de máxima durabilidad.</p>
+                    </div>
+
+                    <div class="process-step text-center">
+                        <div class="step-num">03</div>
+                        <div class="step-icon"><i class="fas fa-paint-roller text-gold text-xl"></i></div>
+                        <h3 class="text-white font-bold text-base mt-4 mb-2">Laminado</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Aplicamos laminado de alta calidad, resistente y con acabado elegante.</p>
+                    </div>
+
+                    <div class="process-step text-center">
+                        <div class="step-num">04</div>
+                        <div class="step-icon"><i class="fas fa-tools text-gold text-xl"></i></div>
+                        <h3 class="text-white font-bold text-base mt-4 mb-2">Instalación</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Puertas, ventana de servicio y accesorios en acero inoxidable.</p>
+                    </div>
+
+                    <div class="process-step text-center">
+                        <div class="step-num">05</div>
+                        <div class="step-icon"><i class="fas fa-check-circle text-gold text-xl"></i></div>
+                        <h3 class="text-white font-bold text-base mt-4 mb-2">Entrega</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Revisión final y entrega de tu remolque listo para trabajar.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         BANNER PROMESA
+    ============================================================ -->
+    <section class="banner-highlight relative overflow-hidden py-24">
+        <div class="banner-img-wrap absolute inset-0">
+            <img src="imagenes/WhatsApp%20Image%202026-07-07%20at%201.02.34%20PM.jpeg"
+                 alt="Remolque Kavex en fabricación — estructura reforzada de acero"
+                 class="banner-bg-img" loading="lazy">
+        </div>
+        <div class="banner-overlay absolute inset-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+                    <span class="text-gold/60 text-xs font-bold tracking-widest uppercase">Nuestra Promesa</span>
+                    <h2 class="text-white font-black text-4xl md:text-5xl mt-4 mb-6 leading-tight [text-shadow:0_2px_20px_rgba(0,0,0,0.8)]">
+                        "Tú pones la idea,
+                        <span class="text-gradient-gold"> nosotros el equipo"</span>
+                    </h2>
+                    <p class="text-gray-200 text-lg leading-relaxed mb-8 [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
+                        Convertimos tu idea de negocio en un remolque <strong class="text-gold">100% funcional</strong>.
+                        Cada unidad se fabrica y equipa a tu medida.
+                        <em class="text-gold/80 not-italic font-semibold">Fabricado para durar, listo para vender.</em>
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20iniciar%20mi%20proyecto%20con%20Kavex" target="_blank"
+                           class="btn-gold-primary inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wide">
+                            <i class="fab fa-whatsapp text-xl"></i> Iniciar mi Proyecto
+                        </a>
+                        <a href="tel:+528139171656"
+                           class="btn-glass inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wide">
+                            <i class="fas fa-phone-alt"></i> 81 3917 1656
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt text-gold text-2xl mb-3"></i>
+                        <div class="text-white font-bold text-sm">Acero Reforzado</div>
+                        <div class="text-gray-400 text-xs mt-1">Fabricado para durar</div>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-toolbox text-gold text-2xl mb-3"></i>
+                        <div class="text-white font-bold text-sm">Equipamiento Premium</div>
+                        <div class="text-gray-400 text-xs mt-1">Listo desde el día uno</div>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-award text-gold text-2xl mb-3"></i>
+                        <div class="text-white font-bold text-sm">Garantía Incluida</div>
+                        <div class="text-gray-400 text-xs mt-1">Estructura y fabricación</div>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-handshake text-gold text-2xl mb-3"></i>
+                        <div class="text-white font-bold text-sm">Atención Directa</div>
+                        <div class="text-gray-400 text-xs mt-1">Cotización por WhatsApp</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         COBERTURA NACIONAL
+    ============================================================ -->
+    <section class="py-24 bg-brand-dark2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+                    <span class="section-tag">Cobertura Nacional</span>
+                    <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-6 leading-tight">
+                        Enviamos tu Remolque a
+                        <span class="text-gradient-gold block mt-1">Cualquier Estado de México</span>
+                    </h2>
+                    <p class="text-gray-400 text-base leading-relaxed mb-8">
+                        Sin importar en qué parte del país te encuentres, fabricamos y coordinamos la entrega de tu remolque Kavex, listo para trabajar.
+                    </p>
+
+                    <div class="mb-10">
+                        <div class="service-row">
+                            <i class="fas fa-map-marked-alt text-gold w-5 mr-4 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm">Cobertura en toda la República Mexicana</span>
+                        </div>
+                        <div class="service-row">
+                            <i class="fas fa-industry text-gold w-5 mr-4 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm">Fabricación 100% nacional, bajo pedido</span>
+                        </div>
+                        <div class="service-row">
+                            <i class="fab fa-whatsapp text-gold w-5 mr-4 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm">WhatsApp: <strong class="text-white">81 3917 1656</strong></span>
+                        </div>
+                        <div class="service-row">
+                            <i class="fas fa-truck-fast text-gold w-5 mr-4 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm">Logística de entrega coordinada</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20saber%20el%20costo%20de%20envio%20a%20mi%20estado"
+                       target="_blank"
+                       class="btn-gold-primary inline-flex items-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wide">
+                        <i class="fab fa-whatsapp text-xl"></i> Cotizar Envío a mi Estado
+                    </a>
+                </div>
+
+                <div class="map-wrap">
+                    <iframe src="https://maps.google.com/maps?q=M%C3%A9xico&z=5&output=embed"
+                            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="Cobertura de envíos Grupo Kavex en México"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO
+    ============================================================ -->
+    <section id="contacto" class="py-24 bg-brand-dark relative overflow-hidden">
+        <div class="contact-glow absolute inset-0 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="section-header text-center mb-16">
+                <span class="section-tag">Contáctanos</span>
+                <h2 class="text-white font-black text-4xl md:text-5xl mt-5 mb-5">
+                    ¿Listo para Poner tu Negocio
+                    <span class="text-gradient-gold"> Sobre Ruedas?</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Cotiza tu remolque hoy mismo. Sin costo y sin compromiso. Respondemos de inmediato por WhatsApp.
+                </p>
+                <div class="gold-divider mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <div class="form-wrap">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Teléfono / WhatsApp</label>
+                                <input type="tel" class="form-input" placeholder="81 XXXX XXXX" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="form-label">Tipo de proyecto</label>
+                            <select class="form-input">
+                                <option value="">Selecciona una opción</option>
+                                <option>Negocio Móvil (Remolque Compacto)</option>
+                                <option>Remolque Recto Equipado</option>
+                                <option>Oficina Móvil</option>
+                                <option>Personalización a Medida</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Descripción del proyecto</label>
+                            <textarea class="form-input h-32 resize-none"
+                                placeholder="Cuéntanos qué giro tienes en mente, medidas aproximadas y equipamiento que necesitas..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn-gold-primary w-full py-4 text-sm font-bold uppercase tracking-wide flex items-center justify-center gap-3">
+                            <i class="fas fa-paper-plane"></i> Enviar mi Cotización
+                        </button>
+                        <p class="text-gray-600 text-xs text-center">Al enviar, aceptas ser contactado por nuestro equipo vía WhatsApp o llamada.</p>
+                    </form>
+                </div>
+
+                <div class="space-y-5">
+                    <div class="wa-card">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="wa-icon"><i class="fab fa-whatsapp text-white text-3xl"></i></div>
+                            <div>
+                                <div class="text-gray-400 text-xs uppercase tracking-widest font-semibold">Cotiza por WhatsApp</div>
+                                <div class="text-white font-black text-3xl leading-none mt-1">81 3917 1656</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-5">Atención directa del <span class="text-gold font-bold">equipo Kavex</span> · Respuesta inmediata</p>
+                        <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20cotizar%20un%20remolque%20Kavex"
+                           target="_blank"
+                           class="btn-whatsapp w-full flex items-center justify-center gap-3 py-4 text-sm font-bold uppercase tracking-wide">
+                            <i class="fab fa-whatsapp text-xl"></i> Abrir WhatsApp Ahora
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="info-mini-card">
+                            <i class="fas fa-map-marked-alt text-gold text-xl mb-3"></i>
+                            <div class="text-white font-bold text-sm mb-1">Cobertura</div>
+                            <div class="text-gray-500 text-xs">Toda la República Mexicana</div>
+                        </div>
+                        <div class="info-mini-card">
+                            <i class="fas fa-industry text-gold text-xl mb-3"></i>
+                            <div class="text-white font-bold text-sm mb-1">Fabricación</div>
+                            <div class="text-gray-500 text-xs">100% Mexicana<br>Bajo pedido</div>
+                        </div>
+                        <div class="info-mini-card">
+                            <i class="fab fa-whatsapp text-gold text-xl mb-3"></i>
+                            <div class="text-white font-bold text-sm mb-1">WhatsApp</div>
+                            <div class="text-gray-500 text-xs">81 3917 1656</div>
+                        </div>
+                        <div class="info-mini-card">
+                            <i class="fas fa-shield-alt text-gold text-xl mb-3"></i>
+                            <div class="text-white font-bold text-sm mb-1">Garantía</div>
+                            <div class="text-gray-500 text-xs">Estructura y fabricación</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="bg-brand-dark4 border-t border-gold/10 pt-16 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="imagenes/logo.png" alt="Logo Grupo Kavex" class="footer-logo-img">
+                        <div>
+                            <div class="text-white font-black text-xl uppercase tracking-wider">KAVEX</div>
+                            <div class="text-gold text-xs font-bold uppercase tracking-widest">Grupo Kavex · Remolques</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 max-w-sm">
+                        Fabricamos remolques móviles, food trucks y oficinas móviles 100% mexicanos. Equipamos tu negocio para que puedas vender donde tú quieras.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://wa.me/528139171656" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navegación</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#hero"       class="footer-link">Inicio</a></li>
+                        <li><a href="#remolques"  class="footer-link">Remolques</a></li>
+                        <li><a href="#proyectos"  class="footer-link">Proyectos</a></li>
+                        <li><a href="#oficinas"   class="footer-link">Oficinas Móviles</a></li>
+                        <li><a href="#beneficios" class="footer-link">Beneficios</a></li>
+                        <li><a href="#contacto"   class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Nuestros Remolques</h4>
+                    <ul class="space-y-3">
+                        <li><span class="footer-link">Negocio Móvil</span></li>
+                        <li><span class="footer-link">Remolque Recto</span></li>
+                        <li><span class="footer-link">Oficinas Móviles</span></li>
+                        <li><span class="footer-link">Personalización a Medida</span></li>
+                        <li><span class="footer-link">Equipamiento Premium</span></li>
+                        <li><span class="footer-link">Envíos Nacionales</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gold/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p class="text-gray-700 text-xs">© 2026 Grupo Kavex. Todos los derechos reservados.</p>
+                <p class="text-gray-700 text-xs">Fabricación Mexicana · <span class="text-gold/40">81 3917 1656</span></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         BOTÓN FLOTANTE WHATSAPP — esquina inferior izquierda
+    ============================================================ -->
+    <a href="https://wa.me/528139171656?text=Hola%2C%20quiero%20informacion%20sobre%20remolques%20Kavex"
+       target="_blank" id="wa-float" class="wa-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+        <span class="wa-label">¡Cotiza tu remolque!</span>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
