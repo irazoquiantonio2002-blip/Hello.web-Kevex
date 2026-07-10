@@ -118,25 +118,28 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ===== NAVBAR ===== */
-#navbar { background: transparent; }
+#navbar {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(11, 56, 104, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+}
 
 #navbar.scrolled {
-    background: rgba(8, 8, 8, 0.95);
+    background: rgba(255, 255, 255, 0.99);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(61, 102, 147, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(11, 56, 104, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
 }
 
 .nav-logo-icon {
     width: 68px;
     height: 68px;
-    background: linear-gradient(135deg, rgba(61,102,147,0.14), rgba(61,102,147,0.04));
-    border: 1px solid rgba(61,102,147,0.28);
     display: flex;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px));
     flex-shrink: 0;
     overflow: hidden;
     padding: 3px;
@@ -149,13 +152,25 @@ a { text-decoration: none; color: inherit; }
     display: block;
 }
 
-.footer-logo-img {
+.footer-logo-badge {
     width: 76px;
     height: 76px;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.footer-logo-img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
-    filter: brightness(1.1);
 }
 
 .nav-link {
@@ -1360,7 +1375,7 @@ a { text-decoration: none; color: inherit; }
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: var(--dark);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1398,7 +1413,7 @@ a { text-decoration: none; color: inherit; }
 @keyframes ldrSpin { to { transform: rotate(360deg); } }
 
 .loader-track {
-    stroke: rgba(61, 102, 147, 0.10);
+    stroke: rgba(11, 56, 104, 0.14);
     stroke-width: 2.5;
 }
 
@@ -1433,7 +1448,6 @@ a { text-decoration: none; color: inherit; }
     height: 74px;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 0 8px rgba(61,102,147,0.5));
 }
 
 @keyframes ldrIconPulse {
@@ -1452,7 +1466,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .loader-brand-main {
-    color: #fff;
+    color: #0B3868;
     font-size: 21px;
     font-weight: 900;
     letter-spacing: 0.24em;
@@ -1479,7 +1493,7 @@ a { text-decoration: none; color: inherit; }
 .loader-bar-outer {
     width: 170px;
     height: 2px;
-    background: rgba(61, 102, 147, 0.12);
+    background: rgba(11, 56, 104, 0.15);
     border-radius: 2px;
     overflow: hidden;
     opacity: 0;
