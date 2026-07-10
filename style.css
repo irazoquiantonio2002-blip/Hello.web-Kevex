@@ -129,17 +129,17 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-logo-icon {
-    width: 46px;
-    height: 46px;
+    width: 68px;
+    height: 68px;
     background: linear-gradient(135deg, rgba(61,102,147,0.14), rgba(61,102,147,0.04));
     border: 1px solid rgba(61,102,147,0.28);
     display: flex;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 7px 100%, 0 calc(100% - 7px));
+    clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px));
     flex-shrink: 0;
     overflow: hidden;
-    padding: 4px;
+    padding: 3px;
 }
 
 .nav-logo-img {
@@ -150,8 +150,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-logo-img {
-    width: 52px;
-    height: 52px;
+    width: 76px;
+    height: 76px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
@@ -1429,8 +1429,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .loader-logo-img {
-    width: 52px;
-    height: 52px;
+    width: 74px;
+    height: 74px;
     object-fit: contain;
     display: block;
     filter: drop-shadow(0 0 8px rgba(61,102,147,0.5));
